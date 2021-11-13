@@ -1,0 +1,62 @@
+.smallWidget {
+  flex: 1;
+  -webkit-box-shadow: 3px 7px 10px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 3px 7px 10px 1px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.smallWidgetTitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.smallWidgetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.smallWidgetListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.smallWidgetUserDP {
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.smallWidgetUser {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+
+.smallWidgetUsername {
+  font-weight: bold;
+}
+
+.smallWidgetUserProfessional {
+  font-weight: 300;
+}
+
+.smallWidgetButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+}
+
+.smallWidgetIcon {
+  font-size: 16px;
+  margin-right: 5px;
+}
