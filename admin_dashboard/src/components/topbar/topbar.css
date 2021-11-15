@@ -1,5 +1,5 @@
 .topbar {
-  width: 100%;
+  width: 100vw;
   height: 50px;
   background-color: #fff;
   position: sticky;
@@ -15,10 +15,14 @@
   justify-content: space-between;
 }
 
+.logoLink {
+  color: darkslateblue;
+  text-decoration: none;
+}
+
 .logo {
   font-weight: bold;
   font-size: 30px;
-  color: darkslateblue;
   cursor: pointer;
 }
 

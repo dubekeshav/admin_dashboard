@@ -6,7 +6,6 @@ import {
   XAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
@@ -20,7 +19,6 @@ function Chart({ title, dataset, dataKey, grid }) {
           <Line type="monotone" dataKey={dataKey} stroke="#5550bd" />
           <Tooltip />
           {grid && <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5" />}
-          <Legend />
         </LineChart>
       </ResponsiveContainer>
     </div>

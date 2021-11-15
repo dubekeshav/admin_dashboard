@@ -12,7 +12,7 @@ function Home() {
       <FeaturedInfo />
       <Chart
         dataset={userDataset}
-        title="UserAnalytics"
+        title="User Analytics"
         grid
         dataKey="Active User"
       />

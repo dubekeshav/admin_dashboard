@@ -49,6 +49,21 @@ export const userDataset = [
   },
 ];
 
+export const productDataset = [
+  {
+    month: "Jan",
+    Sales: 7000,
+  },
+  {
+    month: "Feb",
+    Sales: 7655,
+  },
+  {
+    month: "Mar",
+    Sales: 7849,
+  },
+];
+
 export const userRows = [
   {
     id: 1,
@@ -112,5 +127,64 @@ export const userRows = [
     email: "jon@gmail.com",
     status: "active",
     transaction: "$120.00",
+  },
+];
+
+export const productRows = [
+  {
+    id: 1,
+    name: "Sony Bravia KD-55A8F",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhBxQvyK3Kp2CCKa4DSkrigKPnWrucYhwwCw&usqp=CAU",
+    stock: 13,
+    status: "active",
+    price: "$1400.00",
+  },
+  {
+    id: 2,
+    name: "Dell XPS 15",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDaK50l-3asILxvtElqKiTEGI_S6yH9m-EGQ&usqp=CAU",
+    stock: 37,
+    status: "active",
+    price: "$1050.00",
+  },
+  {
+    id: 3,
+    name: "One Plus 9R",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxGliKf12G-oCaHVxhdRliGuRH2VHiyZ_PA&usqp=CAU",
+    stock: "Not Available",
+    status: "inactive",
+    price: "$550.00",
+  },
+  {
+    id: 4,
+    name: "Apple IPhone 12 Mini",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1qIV_VAWxlYANxBDsNhWeDeId9doQdLDLTw&usqp=CAU",
+    stock: "Not Available",
+    status: "inactive",
+    price: "$1000.00",
+  },
+  {
+    id: 5,
+    name: "Acer Predator Helios 300",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpIu5LkoxO9uYsmlddZf8MX5T57rQ0Rx6N0ELiue36dNJj8HU93pI2FAd8YcfqjnwddE&usqp=CAU",
+    stock: 19,
+    status: "active",
+    price: "$1400.00",
+  },
+  {
+    id: 6,
+    name: "Mac Book Pro",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26E1sF2IQy4e-cpcllG1fld2qF7udw7SgGUOIKtuiPjTPTBL7vAoWtUoj9o7N5Zx3H4Y&usqp=CAU",
+    stock: 31,
+    status: "active",
+    price: "$1200.00",
+  },
+  {
+    id: 7,
+    name: "Air Pods",
+    img: "https://5.imimg.com/data5/SZ/ZW/II/SELLER-55185391/apple-airpods-2-500x500.jpg",
+    stock: 25,
+    status: "active",
+    price: "$120.00",
   },
 ];

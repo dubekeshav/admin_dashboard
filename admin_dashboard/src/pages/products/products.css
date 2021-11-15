@@ -1,0 +1,58 @@
+.products {
+  flex: 4;
+}
+
+.productListItem {
+  display: flex;
+  align-items: center;
+}
+
+.productListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 30%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.productListEdit {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 20%;
+}
+
+.productListEditBtn {
+  border: 1px solid white;
+  border-radius: 30%;
+  -webkit-box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.productListEditBtn:hover {
+  height: 30px;
+  width: 30px;
+  transition: ease-in 150ms;
+  color: rgb(238, 177, 87);
+}
+
+.productListDelete:hover {
+  height: 30px;
+  width: 30px;
+  transition: ease-in 150ms;
+  color: rgb(253, 83, 83);
+}
+
+.productListDelete {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 30%;
+  width: 10px;
+  height: 10px;
+  -webkit-box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
