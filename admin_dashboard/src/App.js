@@ -9,29 +9,43 @@ import NewUser from "./pages/newUser/NewUser";
 import Products from "./pages/products/Products";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
+import Login from "./pages/login/Login";
+import { useState } from "react";
 
 function App() {
+  const isThereAnyUser = localStorage.getItem("user") !== null;
+  console.log(isThereAnyUser);
+  const [isLoggedIn, setIsLoggedIn] = useState(isThereAnyUser);
   return (
     <Router>
-      <Topbar />
-      <div className="container">
-        <Sidebar />
+      {isLoggedIn && (
         <Routes>
-          <Route exact path="/" element={<Home />} />
-
-          <Route path="/users" element={<UserList />} />
-
-          <Route path="/user/:userId" element={<User />} />
-
-          <Route path="/newUser" element={<NewUser />} />
-
-          <Route path="/products" element={<Products />} />
-
-          <Route path="/product/:productId" element={<Product />} />
-
-          <Route path="/newproduct" element={<NewProduct />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
-      </div>
+      )}
+      {!isLoggedIn && (
+        <>
+          <Topbar />
+          <div className="container">
+            <Sidebar />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+
+              <Route path="/users" element={<UserList />} />
+
+              <Route path="/user/:userId" element={<User />} />
+
+              <Route path="/newUser" element={<NewUser />} />
+
+              <Route path="/movies" element={<Products />} />
+
+              <Route path="/product/:productId" element={<Product />} />
+
+              <Route path="/newproduct" element={<NewProduct />} />
+            </Routes>
+          </div>
+        </>
+      )}
     </Router>
   );
 }

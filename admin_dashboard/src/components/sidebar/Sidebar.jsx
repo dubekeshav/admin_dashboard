@@ -12,6 +12,7 @@ import {
   DynamicFeed,
   Mail,
   BarChart,
+  PlayCircleOutline,
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -43,9 +44,9 @@ function Sidebar() {
                 <PersonOutline className="sidebarIcon" /> Users
               </li>
             </Link>
-            <Link to="/products" className="link">
+            <Link to="/movies" className="link">
               <li className="sidebarListItem">
-                <Timeline className="sidebarIcon" /> Products
+                <PlayCircleOutline className="sidebarIcon" /> Movies
               </li>
             </Link>
             <li className="sidebarListItem">
